@@ -9,5 +9,12 @@ $(function(){
   })
 
 
+  $("a[href^='#']").click(function(){
+    var target = $(this.hash);
+    var position = $(target).offset().top;
+    $('html,body').animate({scrollTop: position}, 4000);
+    return false;
+  });
+
 
 })
