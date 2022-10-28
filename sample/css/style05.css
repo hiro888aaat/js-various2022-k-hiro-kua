@@ -49,18 +49,18 @@
 /* 画像の設定 */
 #person img{
   display: block;
-  animation: move 3s infinite;/* 3秒かけてmoveというアニメーションがずっと続く */
+  animation: move 30s infinite;/* 3秒かけてmoveというアニメーションがずっと続く */
 }
 
 /* 以下moveアニメーション */
 @keyframes move{
   0%{
-    transform: rotate(20deg);
+    transform: rotate(20deg) translate(-500px,-200px);
   }
   50%{
-    transform: rotate(-20deg);
+    transform: rotate(-20deg) translate(0,0);
   }
   100%{
-    transform: rotate(20deg);
+    transform: rotate(20deg) translate(-500px,-200px);
   }
 }
